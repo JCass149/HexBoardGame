@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=sizeX\ sizeY
+comment0.target=boolean\ setBoardSize(int,\ int)
+comment0.text=\r\n\ Specifiy\ the\ size\ of\ the\ board\ that\ we\ are\ playing\ on.\ Both\ numbers\ must\ be\ greater\ than\ zero\r\n\ \r\n\ @param\ \ sizeX\ \ \ \ \ \ how\ wide\ the\ board\ will\ be\r\n\ @param\ \ sizeY\ \ \ \ \ \ how\ tall\ the\ board\ will\ be\r\n\ @returns\ boolean\ \ \ true\ if\ the\ board\ could\ be\ set\ successfully\r\n\ \r\n\ @throws\ InvalidBoardSizeException\ \ If\ either\ size\ value\ is\ less\ than\ one.\r\n\ @throws\ BoardAlreadySizedException\ If\ the\ board\ has\ already\ been\ created.\r\n
+comment1.params=
+comment1.target=Piece[][]\ getBoardView()
+comment1.text=\r\n\ This\ method\ will\ return\ a\ two\ dimentional\ array\ of\ Pieces\ which\ represents\ the\ current\ state\ of\ the\ \r\n\ board.\ As\ this\ is\ just\ a\ copy\ of\ the\ data\ it\ is\ safe\ to\ send\ to\ a\ Player.\r\n\ \r\n\ @returns\ Piece[][]\ \ a\ two\ dimentional\ representation\ of\ the\ game\ board.\r\n\ \r\n\ @throws\ \ NoBoardDefinedException\ \ \ Thrown\ when\ a\ call\ is\ made\ to\ this\ method\ before\ the\ boardSize\ \r\n\ method.\r\n
+comment2.params=colour\ move
+comment2.target=boolean\ placePiece(Piece,\ MoveInterface)
+comment2.text=\r\n\ Places\ a\ piece\ on\ the\ board\ at\ the\ specified\ location.\r\n\ \r\n\ @param\ colour\ \ \ \ \ the\ colour\ of\ the\ piece\ to\ place\ (RED\ or\ BLUE)\r\n\ @param\ move\ \ \ \ \ \ \ the\ position\ where\ you\ wish\ to\ place\ a\ piece\r\n\ @return\ boolean\ \ \ true\ if\ the\ piece\ was\ placed\ successfully\r\n\ \r\n\ @throws\ PositionAlreadyTakenException\ \ \ if\ there\ is\ already\ a\ Piece\ in\ this\ position\r\n\ @throws\ InvalidPositionException\ \ \ \ \ \ \ \ if\ the\ specified\ position\ is\ invalid\ -\ e.g.\ (-1,\ -1)\r\n\ @throws\ InvalidColourException\ \ \ \ \ \ \ \ \ \ if\ the\ colour\ being\ set\ is\ invalid.\ E.g.\ if\ you\ try\ to\ place\ two\ BLUE\ pieces\ one\ after\ the\ other\r\n\ @throws\ NoBoardDefinedException\ \ \ \ \ \ \ \ \ if\ the\ board\ has\ yet\ to\ be\ defined\ with\ setBoardSize()\r\n
+comment3.params=
+comment3.target=Piece\ gameWon()
+comment3.text=\r\n\ Checks\ to\ see\ if\ either\ player\ has\ won.\r\n\ \r\n\ @return\ Piece\ \ \ RED\ if\ red\ has\ won,\ BLUE\ if\ blue\ has\ won,\ UNSET\ if\ neither\ player\ has\ won.\r\n\ \r\n\ @throws\ NoBoardDefinedException\ \ Indicates\ that\ this\ method\ has\ been\ called\ before\ the\ boardSize\ \r\n\ method\r\n
+numComments=4
